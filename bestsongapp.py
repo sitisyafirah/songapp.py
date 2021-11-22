@@ -15,8 +15,6 @@ def predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechine
     print(prediction)
     return prediction
 
-
-
 def main():
     st.title("Spotify songs")
     st.write("Disclaimer: This app does for learning purpose only.")
@@ -30,8 +28,8 @@ def main():
     result=""
 
     if st.button("Predict"):
-    st.result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
-    st.success('The score is {}'.format(result))
+    #result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
+    st.success('The score is {}'.format(predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)))
     # one more button saying About ...
     if st.button("About"):
     st.text("Lets LEarn")
