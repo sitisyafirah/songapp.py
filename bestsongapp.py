@@ -5,7 +5,7 @@ import pickle
 pickle_in = open("fordeploy.pkl","rb")
 model=pickle.load(pickle_in)
 
-
+result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
 def predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence):
     """
     this method is for prediction process 
