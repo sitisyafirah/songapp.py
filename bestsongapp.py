@@ -29,11 +29,12 @@ def main():
 
     if st.button("Predict"):
     #result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
-    st.write('The score is {}'.format(result))
+        st.write('The score is {}'.format(result))
     # one more button saying About ...
+    
     if st.button("About"):
-    st.text("Lets LEarn")
-    st.text("Built with Streamlit")
+        st.text("Lets LEarn")
+        st.text("Built with Streamlit")
 
 if __name__=='__main__':
     main()
