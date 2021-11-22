@@ -30,7 +30,7 @@ def main():
     result=""
 
     if st.button("Predict"):
-    result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
+    st.result=predict_popu(acousticness,danceability,duration_ms,energy,loudness,speechiness,valence)
     st.success('The score is {}'.format(result))
     # one more button saying About ...
     if st.button("About"):
